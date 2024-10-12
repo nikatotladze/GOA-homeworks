@@ -1,33 +1,39 @@
 # 1 გაიარეთ sololearn'ი Input and output'ის ჩათვლით
-
-
-# 2 შემოატანინეთ მომხმარებელს 10 რიცხვი და გამოიტანეთ მათი ჯამი
-
-number1 = int(input("enter number: "))
-number2 = int(input("enter number: "))
-number3 = int(input("enter number: "))
-number4 = int(input("enter number: "))
-number5 = int(input("enter number: "))
-number6 = int(input("enter number: "))
-number7 = int(input("enter number: "))
-number8 = int(input("enter number: "))
-number9 = int(input("enter number: "))
-number10 = int(input("enter number: "))
-
-
-print(int(number1) + int(number2) + int(number3) + int(number4) + int(number5) + int(number6) +  int(number7) + int(number8) + int(number9) + int(number10))
+# გავიარე
 
 
 
-#3 შემოატანინეთ მომხმარებელს 3 სიტყვა და გამოიტანეთ მათი ნაერთი
-word1 = input("enter Random word : ")
-word2 = input("enter Random word : ")
-word3 = input("enter Random word : ")
+# 2) შემოატანინეთ მომხმარებელს 10 რიცხვი და გამოიტანეთ მათი ჯამი
 
-print(word1,word2,word3)
-
-# 4 შემოატანინეთ მომხმარებელს რაიმე რიცხვი და გამოიტანეთ ამ რიცხვზე 5'ით მეტი
+numbers = [int(input(f"Enter number {i+1}: ")) for i in range(10)]
+sum_of_numbers = sum(numbers)
+print("Sum of numbers:", sum_of_numbers)
 
 
-number = input("enter number: ")
-print(int(number) + 5)
+
+# 3) შემოატანინეთ მომხმარებელს 3 სიტყვა და გამოიტანეთ მათი ნაერთი
+
+words = [input(f"Enter word {i+1}: ") for i in range(3)]
+random_Words = ''.join(words)
+print("Concatenated result:", random_Words)
+
+
+
+# 4) შემოატანინეთ მომხმარებელს რაიმე რიცხვი და გამოიტანეთ ამ რიცხვზე 5'ით მეტი
+
+number = int(input("Enter a number: "))
+result = number + 5
+print("Result (number + 5):", result)
+
+
+
+# 5) კომენტარის სახით მოიყვანეთ Input/Output მაგალითები და ახსენით რატომ არიან ისინი ან Input'ი ან Output'ი
+
+#ეს არის Input, რადგან მომხმარებელი შეჰყავს მონაცემებს, კონკრეტულად, რიცხვებს. პროგრამა ამ ინფორმაციას იღებს და იყენებს შემდგომი გამოთვლებისთვის.
+#Input: შეყვანილი რიცხვები: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+
+#ეს არის Output, რადგან ეს არის პროგრამის მიერ მიღებული საბოლოო შედეგი ან პასუხი, რომელიც დააანგარიშა შეყვანილი მონაცემების საფუძველზე
+#Output: რიცხვების ჯამი: 55.
+
+
